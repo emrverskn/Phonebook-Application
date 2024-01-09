@@ -5,7 +5,6 @@ app = Flask(__name__)
 
 db_endpoint = open("/home/ec2-user/dbserver.endpoint", 'r', encoding='UTF-8') 
 
-# Configure mysql database
 
 app.config['MYSQL_DATABASE_HOST'] = db_endpoint.readline().strip()
 app.config['MYSQL_DATABASE_USER'] = 'admin'
