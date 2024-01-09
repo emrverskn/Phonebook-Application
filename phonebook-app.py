@@ -1,7 +1,6 @@
 from flask import Flask, request, render_template
 from flaskext.mysql import MySQL
 
-# Create an object named app
 app = Flask(__name__)
 
 # This "/home/ec2-user/dbserver.endpoint" file has to be created from cloudformation template and it has RDS endpoint
