@@ -18,8 +18,6 @@ connection = mysql.connect()
 connection.autocommit(True)
 cursor = connection.cursor()
 
-# Write a function named `init_todo_db` create phonebook table within clarusway_phonebook db, if it doesn't exist
-
 def init_phonebook_db():
     phonebook_table = """
     CREATE TABLE IF NOT EXISTS clarusway_phonebook.phonebook(
